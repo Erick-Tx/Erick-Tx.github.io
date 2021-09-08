@@ -1,41 +1,52 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'ericktequiz1110@hotmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+    use PHPMailer\PHPMailer\PHPMailer;
+    
+    
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php";
+    require_once "PHPMailer/Exception.php";
+
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer();
+
+
+//Server settings
+
+$mail->isSMTP();                                            //Send using SMTP
+$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+$mail->Username   = 'ericktequiz1110@gmail.com';                     //SMTP username
+$mail->Password   = 'Cambiar.el.mundo.2021';                               //SMTP password
+$mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
+$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+
+$email = $_POST['email'];
+$nombre = $_POST['name'];
+
+
+//Recipients
+$mail->setFrom($email, $nombre);
+$mail->addAddress('ericktequiz1110@hotmail.com', $email);     //Add a recipient
+
+
+//Content
+$mail->isHTML(true);                                  //Set email format to HTML
+$mail->Subject = $_POST['subject'];
+$mail->Body    = $_POST['message'];
+
+
+  if (!$mail->Send())
+  {
+    echo "Error: $mail->ErrorInfo";
   }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
-?>
+  else
+  {
+    echo "Message Sent!";
+  }
+ ?>
