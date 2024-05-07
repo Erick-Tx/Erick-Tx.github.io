@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://theme808-apparelix-watches.myshopify.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://theme808-apparelix-watches.myshopify.com/collections/unisex.atom"/>
+  <title>Apparelix watches</title>
+  <updated>2019-12-18T03:32:48-05:00</updated>
+  <author>
+    <name>Apparelix watches</name>
+  </author>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392587034762</id>
+    <published>2019-12-18T03:32:48-05:00</published>
+    <updated>2019-12-18T03:32:48-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/emporio-armani-chronograph-mens-watch"/>
+    <title>Emporio Armani Chronograph Mens Watch</title>
+    <s:type>Ladies</s:type>
+    <s:vendor>Gucci</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/emporio_armani_chronograph_mens_watch_1_fc3cbda3-9cca-450b-9d8a-c69bbbfb7c4e.png?v=1576657986"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Gucci<br>
+        <strong>Type: </strong>Ladies<br>
+        <strong>Price: </strong>
+            49.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Our vast range of sports watches includes popular brands, such as Casio, G-Shock and Citizen, all packed with the special features any budding sportsman could need. If it’s versatility you’re after, our casual collection comes from fashion brands such as Diesel and Fossil and looks great in the office or out on the town.</p>
+<p>For the sports enthusiast, Smart Watches are a great way to time yourself and always keep track of your steps and more. Key athletic features like water resistance, date and time, a stretchy watch strap and quartz movement make you primed to take on any sport!</p>
+<p>Chronograph watches make it easy to tell time precisely, with stick indices that can tell you - down to the second - what time it is. All watches of this type are elegantly crafted, often with ceramic turning bezels that lend the watch an ornate, delicate appearance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Crystal</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392587034762</id>
+      <title>Default Title</title>
+      <s:price currency="USD">49.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392583692426</id>
+    <published>2019-12-18T03:30:14-05:00</published>
+    <updated>2019-12-18T03:30:14-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/gucci-g-timeless-gold-plated-leather-watch"/>
+    <title>Gucci G Timeless Gold Plated Leather Watch</title>
+    <s:type>Men&apos;s</s:type>
+    <s:vendor>Vivienne Westwood</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/gucci_g_timeless_gold_plated_leather_watch_1_2a582a29-d6b8-492f-acd1-061aaff95965.png?v=1576657830"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Vivienne Westwood<br>
+        <strong>Type: </strong>Men&#39;s<br>
+        <strong>Price: </strong>
+            10.00 - 19.00
+            <a href="https://theme808-apparelix-watches.myshopify.com/products/gucci-g-timeless-gold-plated-leather-watch">(4 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Solar watches are another option for those who want to energize their watch collection. Powered by a solar panel, these watches are environmentally friendly and ideal for the seasoned outdoorsman. They also require minimal maintenance because they don’t need a battery or have to be wound.</p>
+<p>No matter what type of watch you’re looking for, you’ll never lose track of time when you choose from the vast array of all watches presented in our online store.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bracelet</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392583692426</id>
+      <title>Men’s / Mechanical / Casual</title>
+      <s:price currency="USD">17.00</s:price>
+      <s:sku/>
+      <s:grams>4990</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392583692426</id>
+      <title>Women’s / Mechanical / Casual</title>
+      <s:price currency="USD">18.00</s:price>
+      <s:sku/>
+      <s:grams>5000</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392583692426</id>
+      <title>Men’s / Quartz / Casual</title>
+      <s:price currency="USD">19.00</s:price>
+      <s:sku/>
+      <s:grams>1134</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392583692426</id>
+      <title>Women’s / Quartz / Sport</title>
+      <s:price currency="USD">10.00</s:price>
+      <s:sku/>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392537358474</id>
+    <published>2019-12-18T02:57:59-05:00</published>
+    <updated>2019-12-18T02:57:59-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/hugo-boss-grand-prix-black-ion-plated-chronograph-mens-watch"/>
+    <title>Hugo Boss Grand Prix Black Ion Plated Chronograph Mens Watch</title>
+    <s:type>Diving</s:type>
+    <s:vendor>Hugo Boss</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/hugo_boss_grand_prix_black_ion_plated_chronograph_mens_watch_1_6e763fe2-b4f5-4c99-b7b9-8ea19bc98027.png?v=1576655893"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Hugo Boss<br>
+        <strong>Type: </strong>Diving<br>
+        <strong>Price: </strong>
+            34.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Solar watches are another option for those who want to energize their watch collection. Powered by a solar panel, these watches are environmentally friendly and ideal for the seasoned outdoorsman. They also require minimal maintenance because they don’t need a battery or have to be wound.</p>
+<p>No matter what type of watch you’re looking for, you’ll never lose track of time when you choose from the vast array of all watches presented in our online store.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Activity</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392537358474</id>
+      <title>Default Title</title>
+      <s:price currency="USD">34.00</s:price>
+      <s:sku>327038</s:sku>
+      <s:grams>32600</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392536703114</id>
+    <published>2019-12-18T02:57:44-05:00</published>
+    <updated>2019-12-18T02:57:44-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/gucci-plexiglass-fashion-ladies-watch"/>
+    <title>Gucci Plexiglass Fashion Ladies Watch</title>
+    <s:type>Vintage</s:type>
+    <s:vendor>Gucci</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/gucci_plexiglass_fashion_ladies_watch_1.png?v=1576655878"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Gucci<br>
+        <strong>Type: </strong>Vintage<br>
+        <strong>Price: </strong>
+            78.00 - 80.00
+            <a href="https://theme808-apparelix-watches.myshopify.com/products/gucci-plexiglass-fashion-ladies-watch">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Our vast range of sports watches includes popular brands, such as Casio, G-Shock and Citizen, all packed with the special features any budding sportsman could need. If it’s versatility you’re after, our casual collection comes from fashion brands such as Diesel and Fossil and looks great in the office or out on the town.</p>
+<p>For the sports enthusiast, Smart Watches are a great way to time yourself and always keep track of your steps and more. Key athletic features like water resistance, date and time, a stretchy watch strap and quartz movement make you primed to take on any sport!</p>
+<p>Chronograph watches make it easy to tell time precisely, with stick indices that can tell you - down to the second - what time it is. All watches of this type are elegantly crafted, often with ceramic turning bezels that lend the watch an ornate, delicate appearance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Chronograph</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392536703114</id>
+      <title>Mechanical</title>
+      <s:price currency="USD">80.00</s:price>
+      <s:sku>327AE-6</s:sku>
+      <s:grams>2000</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392536703114</id>
+      <title>Quartz</title>
+      <s:price currency="USD">79.00</s:price>
+      <s:sku>556-62225</s:sku>
+      <s:grams>2000</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392536703114</id>
+      <title>Automatic</title>
+      <s:price currency="USD">78.00</s:price>
+      <s:sku>64554</s:sku>
+      <s:grams>7000</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392535752842</id>
+    <published>2019-12-18T02:57:19-05:00</published>
+    <updated>2019-12-18T02:57:19-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/gucci-i-gucci-ion-plated-digital-mens-watch"/>
+    <title>Gucci I Gucci Ion Plated Digital Mens Watch</title>
+    <s:type>Ladies</s:type>
+    <s:vendor>Emporio Armani</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/gucci_i_gucci_ion_plated_digital_mens_watch_1.png?v=1576655852"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Emporio Armani<br>
+        <strong>Type: </strong>Ladies<br>
+        <strong>Price: </strong>
+            24.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Tick tock. You’ll never wonder what time it is again when you browse through all watches, including designer brands like Gucci, Daniel Wellington. From stainless steel and ceramic watch straps to leather and fabric ones, you’ll find the perfect fit for your wrist.</p>
+<p>A watch is an accessory that makes you look smart and professional. This accessory is loved by both men and women. Women love wearing a watch that has an elegant and contemporary design. Today’s modern woman cannot leave for office without wearing a chic watch. Ladies’ watches are available in various designs. Watches for girls are the mode of various materials such as metal, leather, and plastic.</p>
+<p>Our extensive collection of men’s and women’s watches covers every style and taste, from cutting-edge modern designs to ageless classics. Want a watch that’s both practical and fashionable? Look for straps in vibrant colors like pink, purple bright white. Watch faces with diamonds accents or larger font numbers exude fabulous, bold style, while watch straps in silver-tone or gold-tone stainless steel punctuate the suitable nuances of the watch.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Crystal</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392535752842</id>
+      <title>Default Title</title>
+      <s:price currency="USD">24.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392534868106</id>
+    <published>2019-12-18T02:56:53-05:00</published>
+    <updated>2019-12-18T02:56:53-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/gucci-g-collection-diamond-gold-plated-ladies-watch"/>
+    <title>Gucci G Collection Diamond Gold Plated Ladies Watch</title>
+    <s:type>Chronograph</s:type>
+    <s:vendor>Tommy Hilfiger</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/gucci_g_collection_diamond_gold_plated_ladies_watch_1.png?v=1576655828"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Tommy Hilfiger<br>
+        <strong>Type: </strong>Chronograph<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Our vast range of sports watches includes popular brands, such as Casio, G-Shock and Citizen, all packed with the special features any budding sportsman could need. If it’s versatility you’re after, our casual collection comes from fashion brands such as Diesel and Fossil and looks great in the office or out on the town.</p>
+<p>For the sports enthusiast, Smart Watches are a great way to time yourself and always keep track of your steps and more. Key athletic features like water resistance, date and time, a stretchy watch strap and quartz movement make you primed to take on any sport!</p>
+<p>Chronograph watches make it easy to tell time precisely, with stick indices that can tell you - down to the second - what time it is. All watches of this type are elegantly crafted, often with ceramic turning bezels that lend the watch an ornate, delicate appearance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Military</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392534868106</id>
+      <title>Default Title</title>
+      <s:price currency="USD">50.00</s:price>
+      <s:sku>654654654-56</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://theme808-apparelix-watches.myshopify.com/products/4392534048906</id>
+    <published>2019-12-18T02:56:21-05:00</published>
+    <updated>2019-12-18T02:56:21-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://theme808-apparelix-watches.myshopify.com/products/emporio-armani-mens-watch"/>
+    <title>Emporio Armani Mens Watch</title>
+    <s:type>Vintage</s:type>
+    <s:vendor>Hugo Boss</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0273/2346/5866/products/emporio_armani_mens_watch_1_6456f136-854a-4d34-81c5-e0e9b104b896.png?v=1576655796"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Hugo Boss<br>
+        <strong>Type: </strong>Vintage<br>
+        <strong>Price: </strong>
+            110.00 - 119.00
+            <a href="https://theme808-apparelix-watches.myshopify.com/products/emporio-armani-mens-watch">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Solar watches are another option for those who want to energize their watch collection. Powered by a solar panel, these watches are environmentally friendly and ideal for the seasoned outdoorsman. They also require minimal maintenance because they don’t need a battery or have to be wound.</p>
+<p>No matter what type of watch you’re looking for, you’ll never lose track of time when you choose from the vast array of all watches presented in our online store.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Chronograph</s:tag>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392534048906</id>
+      <title>Mechanical</title>
+      <s:price currency="USD">119.00</s:price>
+      <s:sku>327AE-6</s:sku>
+      <s:grams>2000</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392534048906</id>
+      <title>Quartz</title>
+      <s:price currency="USD">110.00</s:price>
+      <s:sku>556-62225</s:sku>
+      <s:grams>2000</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://theme808-apparelix-watches.myshopify.com/products/4392534048906</id>
+      <title>Automatic</title>
+      <s:price currency="USD">115.00</s:price>
+      <s:sku>64554</s:sku>
+      <s:grams>7000</s:grams>
+    </s:variant>
+  </entry>
+</feed>
