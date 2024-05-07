@@ -1,1706 +1,550 @@
 <!DOCTYPE html>
-<html lang="en" class="color_scheme">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-<!-- Head Section -->
+<html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<title>LuxShine</title>
-	<link rel="canonical" href="index.html" />
-	<link rel="shortcut icon" href="img/logo.png" type="image/png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<!-- CSS Style -->
+  <title>Erick Téquiz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<style type="text/css">
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 400;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n4.c8300d95fd4ce72542a6efba9c682da40d144fba8aa7.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=961f1df5bc3c470fd6d4c35771337f112d1e56c377c722c158a3e5fd2cba17e9") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n4.ed7230a86e75b34b997bd12a5e1b87fcaf7104d8dcf1.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=f84ea72f8ff204feba364b175eda998a289ec200e6612ec1223cd28c9739c586") format("woff");
-		}
+  <!-- Favicons -->
+  <link href="assets/img/tx.png" rel="icon">
+  <link href="assets/img/tx2.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 400;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n4.c8300d95fd4ce72542a6efba9c682da40d144fba8aa7.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=961f1df5bc3c470fd6d4c35771337f112d1e56c377c722c158a3e5fd2cba17e9") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n4.ed7230a86e75b34b997bd12a5e1b87fcaf7104d8dcf1.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=f84ea72f8ff204feba364b175eda998a289ec200e6612ec1223cd28c9739c586") format("woff");
-		}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 300;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n3.e856e216bb49828e0e977e88909b73b7a1ee4f8cf2d3.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=b928b83b30640da7ed941d91d5f50224c6c2cecd66b7381a195659e2073f4b7d") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n3.5aec8850139a678e4f287d50561f1b4a01e809edd404.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=98ea87c3375770157e7e178527815efb98243a9a0d30ba93dbf59c1112af7a4a") format("woff");
-		}
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 400;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n4.c8300d95fd4ce72542a6efba9c682da40d144fba8aa7.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=961f1df5bc3c470fd6d4c35771337f112d1e56c377c722c158a3e5fd2cba17e9") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n4.ed7230a86e75b34b997bd12a5e1b87fcaf7104d8dcf1.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=f84ea72f8ff204feba364b175eda998a289ec200e6612ec1223cd28c9739c586") format("woff");
-		}
+  <!-- CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 700;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n7.ba75738508cdf6cb75183ab984567749245418efd7e3.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=4367f03437bb1f0a7537e1728f4a634ca6e2e49b6d77f911bf2c418a46961f61") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n7.a2c4634c9b4e7a4bf49a23a7b0a2f41d6afbfc1a9bbc.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=8411cd06f1e58cf9f4c1eec681db0a6ea7e2e03bd64ce6d05e5e8b837683b912") format("woff");
-		}
-
-		@font-face {
-			font-family: "Josefin Sans";
-			font-weight: 600;
-			font-style: normal;
-			src: url("cdn/fonts/josefin_sans/josefinsans_n6.27f3cc0f5b9a7bdf9168c571b20ddc6647fc9324b176.woff2?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=1d55d5276e139fab1f79886b3ae5f0660f679c56630f0094e00586c1a2130ba6") format("woff2"),
-				url("cdn/fonts/josefin_sans/josefinsans_n6.19bdad20d19799d6efd7cc2911aeb01d671b33044f72.woff?h1=dGhlbWU4MDgtYXBwYXJlbGl4LXdhdGNoZXMuYWNjb3VudC5teXNob3BpZnkuY29t&amp;hmac=e04846673577d5cfb73bf54d57d295bbf80f9dbd4fcfd1c4f0d8957e903c5944") format("woff");
-		}
-
-		:root {
-			/*  TYPOGRAPHY  */
-			--base-font: "Josefin Sans", sans-serif;
-			--base-font-size: 16px;
-			--heading-font: "Josefin Sans", sans-serif;
-			--heading-font-size: 30px;
-			--heading-light-font-weight: 300;
-			--heading-regular-font-weight: 400;
-			--heading-medium-font-weight: ;
-			--heading-bold-font-weight: 700;
-			--heading-semi-bold-font-weight: 600;
-			--heading-extra-bold-font-weight: ;
-			/*  COLORS  */
-			--color-1: #cba181;
-			--color-2: #e7e0dd;
-			--color-3: #ffffff;
-			--color-4: #000000;
-			--bg-color: #0b0a08;
-			--base-font-color: #e7e0dd;
-			--heading-font-color: #cba181;
-			--border-color: #cba181;
-			--links-color: #e7e0dd;
-			--links-color-hover: #cba181;
-			--button-color: rgba(0, 0, 0, 0);
-			--button-text-color: #cba181;
-			--button-border-color: #cba181;
-			--button-hover-color: #cba181;
-			--button-hover-text-color: #12100e;
-			--button-hover-border-color: #cba181;
-			--alt-button-color: rgba(0, 0, 0, 0);
-			--alt-button-text-color: #ffffff;
-			--alt-button-border-color: #ffffff;
-			--alt-button-hover-color: #ffffff;
-			--alt-button-hover-text-color: #000000;
-			--alt-button-hover-border-color: #ffffff;
-			--product-name-color: #e7e0dd;
-			--product-name-color-hover: #cba181;
-			--product-price-color: #cba181;
-			--product-price-sale-color: #e7e0dd;
-		}
-	</style>
-	<link href="cdn/shop/t/2/assets/style.scss0490.css?v=134402699947433167251701253592" rel="stylesheet"
-		type="text/css" media="all" />
-	<!--Cambiar Ruta-->
-	<link href="cdn/shop/t/2/assets/responsive.scsseaec.css?v=34113539327686910061576850963" rel="stylesheet"
-		type="text/css" media="all" />
-	<!--Cambiar Ruta-->
-
-	<!-- JavaScript Code -->
-	<script>
-		var theme = {
-			moneyFormat: "${{amount}}",
-		};
-	</script>
-	<script src="cdn/shop/t/2/assets/assets416e.js?v=10715065927880640401701254530"></script>
-	<script src="cdn/shop/t/2/assets/lazysizes.mind600.js?v=35890577942795198701575981973" defer></script>
-	<script src="cdn/shop/t/2/assets/shopafe3.js?v=160143046277291997901701253592" defer></script>
-	<script src="cdn/shop/t/2/assets/header-script10f1.js?v=118018423452900079651575981986"
-		type="text/javascript"></script>
-	
-	
-
-	
-
-	<!-- Carrousel SCRIPT and other Script -->
-
-	<script id="sections-script"
-		data-sections="index-image-with-text-overlay,index-products-carousel,index-testimonials,header-1" defer="defer"
-		src="cdn/shop/t/2/compiled_assets/scriptsb132.js?1561"></script>
-	<script src="../cdn/shop/t/2/assets/currency-tools551f.js?v=56053141205250997201575981967"></script>
-
-	<!---->
 </head>
 
-<!-- End Head Section -->
-
-<body class="template-index scheme_1">
-	<div class="page_wrapper">
-		<div id="page_preloader__bg">
-			<img id="page_preloader__img" src="cdn/shop/t/2/assets/shopify_logof3ed.gif?v=11597415176960689371575981977"
-				alt="" />
-			<!-- Imagen al cargar la página Cambiar-->
-		</div>
-
-		<script>
-			preloaderBg = document.getElementById("page_preloader__bg");
-			preloaderImg = document.getElementById("page_preloader__img");
-
-			window.addEventListener("load", function () {
-				preloaderBg.classList.add("off");
-				preloaderImg.classList.add("off");
-			});
-		</script>
-
-		<div id="shopify-section-helper" class="shopify-section"></div>
-
-		<div id="shopify-section-header-1" class="shopify-section">
-			<div id="pseudo_sticky_block"></div>
-
-			<header id="page_header" class="header_layout_1 header_overlay">
-				<div class="page_container">
-					<div class="header_row_1">
-						<!-- Left-->
-						<div class="header_item_left">
-							<!--Colocar aquí los items que desees agregar a la izquierda del logo principal-->
-						</div>
-
-						<div class="header_item_center">
-							<a class="header_logo" href="index.html"><img src="img/luxshine_logo_v4.png" alt="LuxShine"
-									style="max-width: 160px" /></a>
-						</div>
-
-						<!-- Right-->
-						<div class="header_item_right">
-							<!--Colocar aquí los items que desees agregar a la derecha del logo principal-->
-						</div>
-					</div>
-
-					<div class="header_row_2">
-						<div class="container header_main_wrap">
-							<div class="header_wrap2 header_center">
-								<nav id="megamenu" class="megamenu">
-									<h2 id="megamenu_mobile_toggle" style="display: none" title="Menu">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<rect y="3" width="20" height="2" />
-											<rect y="9" width="20" height="2" />
-											<rect y="15" width="20" height="2" />
-										</svg>
-									</h2>
-
-									<div id="megamenu_mobile_close" style="display: none">
-										<div class="close_icon"></div>
-									</div>
-
-									<ul id="megamenu_level__1" class="level_1">
-										<li class="level_1__item level_2__small" style="display: inline-block">
-											<a class="level_1__link active" href="index.html">Inicio
-												<i class="level_1__trigger megamenu_trigger" data-submenu="menu_1565951062484"></i>
-											</a>
-
-											<ul class="level_2" id="menu_1565951062484" style="display: none">
-												<li class="item_link-linklist">
-													<div>
-														<ul class="level_3">
-															<li class="level_3__item"><a class="level_3__link" href="index.html">Inicio</a></li>
-															<li class="level_3__item"><a class="level_3__link" href="pages/sections-all.html">Secciones</a></li>
-															<li class="level_3__item"><a class="level_3__link" href="collections/all.html">Catálogo</a></li>
-															<li class="level_3__item"><a class="level_3__link" href="blogs/news.html">Blog</a></li>
-															<li class="level_3__item"><a class="level_3__link" href="pages/about-us.html">¿Quiénes somos?</a></li>
-															<li class="level_3__item"> <a class="level_3__link" href="pages/contact-us.html">Contáctanos</a></li>
-														</ul>
-													</div>
-												</li>
-											</ul>
-										</li>
-
-										<li class="level_1__item" style="display: inline-block"><a class="level_1__link" href="pages/sections-all.html">Secciones</a></li>
-										<li class="level_1__item level_2__links" style="display: inline-block">
-											<a class="level_1__link" href="collections/all.html">Catálogo<i class="level_1__trigger megamenu_trigger"data-submenu="menu_1565953378400"></i></a>
-
-											<ul class="level_2" id="menu_1565953378400" style="display: none">
-												<li class="container item_3link-2ban">
-													<div class="row">
-
-														<div class="megamenu_col__item megamenu_linklist">
-															<h3 class="visible">Hombres <i class="level_2__trigger megamenu_trigger" data-submenu="menu_1565953378400-1"></i></h3>
-															<ul class="level_3" id="menu_1565953378400-1">
-																<li class="level_3__item"><a class="level_3__link" href="collections/accessories.html">Accessories</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/luxury.html">Luxury</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/sale.html">Sale</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="search.html">Search</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/sports.html">Sports</a></li>
-															</ul>
-														</div>
-
-														<div class="megamenu_col__item megamenu_linklist">
-															<h3 class="visible">Mujeres <i class="level_2__trigger megamenu_trigger" data-submenu="menu_1565953378400-2"></i></h3>
-															<ul class="level_3" id="menu_1565953378400-2">
-																<li class="level_3__item"><a class="level_3__link" href="collections/vintage.html">Vintage</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/unisex.html">Unisex</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/sports.html">Sports</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/ladies.html">Ladies</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/kids.html">Kids’</a></li>
-															</ul>
-														</div>
-														
-														<!--
-														<div class="megamenu_col__item megamenu_linklist">
-															<h3 class="visible">Niños <i class="level_2__trigger megamenu_trigger" data-submenu="menu_1565953378400-3"></i></h3>
-															<ul class="level_3" id="menu_1565953378400-3">
-																<li class="level_3__item"><a class="level_3__link" href="collections/kids.html">Kids’</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/luxury.html">Luxury</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/sports.html">Sports</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/vintage.html">Vintage</a></li>
-																<li class="level_3__item"><a class="level_3__link" href="collections/unisex.html">Unisex</a></li>
-															</ul>
-														</div>
-														-->
-
-														<div class="megamenu_col__item megamenu_col__banner">
-															<a class="megamenu_banner" id="banner_catalog_1" href="collections/kids.html">
-																<img src="img/banners/dia_especial.webp" alt="" />
-																<div class="caption_text">
-																	<h4 style="font-weight: bolder; color: black;">Día de las Madres</h4>
-																	<h5>Nuevo</h5>
-																</div>
-															</a>
-														</div>
-
-														<div class="megamenu_col__item megamenu_col__banner">
-															<a class="megamenu_banner" id="banner_catalog_2" href="collections/sale.html"> 
-																<img src="img/banners/oferta.png" alt="" />
-																<div class="caption_text">
-																	<h4 style="color: #000000;">Ofertas</h4>
-																	<h5 style="color: #000000; font-weight: 400">Productos al 20% de descuento</h5>
-																</div>
-															</a>
-														</div>
-
-													</div>
-												</li>
-											</ul>
-										</li>
-
-										<li class="level_1__item level_2__links" style="display: inline-block">
-											<a class="level_1__link" href="collections.html">Colecciones
-												<i class="level_1__trigger megamenu_trigger"
-													data-submenu="menu_1568366330325"></i>
-											</a>
-
-											<ul class="level_2" id="menu_1568366330325" style="display: none">
-												<li class="container item_2link-2ban">
-													<div class="row">
-														<div class="megamenu_col__item megamenu_linklist">
-															<h3>
-																Men's
-																<i class="level_2__trigger megamenu_trigger"
-																	data-submenu="menu_1568366330325-1"></i>
-															</h3>
-
-															<ul class="level_3" id="menu_1568366330325-1">
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/accessories.html">Accessories</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/luxury.html">Luxury</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/sale.html">Sale</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="search.html">Search</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/sports.html">Sports</a>
-																</li>
-															</ul>
-														</div>
-
-														<div class="megamenu_col__item megamenu_linklist">
-															<h3>
-																Women's
-																<i class="level_2__trigger megamenu_trigger"
-																	data-submenu="menu_1568366330325-2"></i>
-															</h3>
-
-															<ul class="level_3" id="menu_1568366330325-2">
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/vintage.html">Vintage</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/unisex.html">Unisex</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/sports.html">Sports</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/ladies.html">Ladies</a>
-																</li>
-
-																<li class="level_3__item">
-																	<a class="level_3__link"
-																		href="collections/kids.html">Kids’</a>
-																</li>
-															</ul>
-														</div>
-
-														<div class="megamenu_col__item megamenu_col__banner">
-															<a class="megamenu_banner"
-																href="collections/accessories.html">
-																<img src="cdn/shop/files/all_slide_4_380x240_crop_centerd31c.jpg?v=1613675515"
-																	alt="" />
-																<div class="caption_text">
-																	<h4>Summer 2019/20</h4>
-																</div>
-															</a>
-														</div>
-
-														<div class="megamenu_col__item megamenu_col__banner">
-															<a class="megamenu_banner"
-																href="products/breitling-navitimer-world-46-automatic-chronograph-mens-watch.html">
-																<img src="cdn/shop/files/all_w_380x240_crop_centerd31c.jpg?v=1613675515"
-																	alt="" />
-																<div class="caption_text">
-																	<h4>Autumn 2019/20</h4>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</li>
-
-										<li class="level_1__item level_2__links" style="display: inline-block">
-											<a class="level_1__link" href="blogs/news.html">Blog
-											</a>
-										</li>
-
-										<li class="level_1__item" style="display: inline-block">
-											<a class="level_1__link" href="pages/contact-us.html">Contáctanos
-											</a>
-										</li>
-
-										<li class="megamenu_footer">
-											<div class="menu_header_account">
-												<span>Account</span>
-
-												<a href="account/login4236.html">Account</a>
-											</div>
-
-											<div class="menu_currency_selector__wrap">
-												<span>Currency</span>
-												<div id="menu_currency_selector">
-													<label id="menu_currency_selected">
-														<input class="menu_currency_selector__item" type="radio"
-															name="menu_currency" value="USD" data-value="USD" />
-														USD
-													</label>
-
-													<label>
-														<input class="menu_currency_selector__item" type="radio"
-															name="menu_currency" value="EUR" data-value="EUR" />
-														EUR
-													</label>
-
-													<label>
-														<input class="menu_currency_selector__item" type="radio"
-															name="menu_currency" value="GBP" data-value="GBP" />
-														GBP
-													</label>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-		</div>
-
-		<div class="page_container">
-			<div class="main_content">
-				<!-- BEGIN content_for_index -->
-				<div id="shopify-section-1576071244011"
-					class="shopify-section section section_homepage section_image-with-text-overlay">
-					<div class="section_wrap flexible_block__large">
-						<div class="img_placeholder__wrap img_placeholder__large" style="
-                  background-image: url(cdn/shop/files/img_top_2048x960_crop_top1878.png?v=1613674412);
-                "></div>
-
-						<div class="section_txt align_center full_width">
-							<div class="container">
-								<div class="caption_text">
-									<h5>Creando elegancia y belleza</h5>
-
-									<h2>TODO LO MEJOR SOLO AQUÍ</h2>
-
-									<p>
-										Descubre la elegancia y calidad de Luxshine con su amplia
-										gama de joyas para damas y caballeros, elaboradas con
-										materiales de alta calidad como plata 925, plata italiana,
-										oro, covergold y goldfield.
-									</p>
-
-									<a href="collections/accessories.html" class="btn"><span>Compra ahora</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-1576220879779" class="shopify-section section section_divider">
-					<div class="divider_item container" style="padding-top: 10px"></div>
-
-					<div class="divider_item tablet_show container" style="padding-top: 10px"></div>
-				</div>
-				<div id="shopify-section-1576153575866"
-					class="shopify-section section section_homepage section_banners">
-					<div class="container_big">
-						<div class="row">
-							<div class="col-sm-4 banner_33">
-								<div class="banner_item">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_33_1_100x120_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										alt=""
-										data-src="cdn/shop/files/ban_33_1_590x700_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_top caption_horizontal_center caption_normal">
-										<div class="caption_text text_align_center">
-											<h2>Men’s Watches</h2>
-
-											<h4>Ofertas por tiempo limitado</h4>
-
-											<a class="btn" href="collections/men-s.html"><span> </span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4 banner_33">
-								<div class="banner_item">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_33_2_100x120_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										alt=""
-										data-src="cdn/shop/files/ban_33_2_590x700_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_top caption_horizontal_center caption_normal">
-										<div class="caption_text text_align_center">
-											<h2>Ladies Watches</h2>
-
-											<h4>Don’t miss the moment</h4>
-
-											<a class="btn" href="collections/ladies.html"><span> </span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4 banner_33">
-								<div class="banner_item">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_33_3_100x120_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										alt=""
-										data-src="cdn/shop/files/ban_33_3_590x700_crop_center.progressive.pnge23a.jpg?v=1613674592"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_top caption_horizontal_center caption_normal">
-										<div class="caption_text text_align_center">
-											<h2>Vintage Watches</h2>
-
-											<h4>Hyperchrome Match Point</h4>
-
-											<a class="btn" href="collections/vintage.html"><span> </span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-1576220951548" class="shopify-section section section_divider">
-					<div class="divider_item container" style="padding-top: 26px"></div>
-
-					<div class="divider_item tablet_show container" style="padding-top: 26px"></div>
-				</div>
-				<div id="shopify-section-1576153874025"
-					class="shopify-section section section_homepage section_banners">
-					<div class="container_big">
-						<div class="row">
-							<div class="col-sm-12 banner_100">
-								<div class="banner_item">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_100_300x116_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										alt=""
-										data-src="cdn/shop/files/ban_100_1810x700_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_middle caption_horizontal_right caption_normal">
-										<div class="caption_text text_align_left">
-											<h2>
-												<p>LuxShine Style</p>
-											</h2>
-
-											<h4>
-												<b>D</b>escubre Luxshine, el destino definitivo para
-												joyería de lujo en plata 925, plata italiana, oro,
-												covergold y goldfield. Explora nuestra exclusiva
-												colección de joyas para damas y caballeros,
-												meticulosamente diseñadas para reflejar elegancia y
-												estilo. Encuentra piezas únicas que son la elección
-												perfecta para cualquier ocasión. Visita Luxshine ahora
-												y descubre el brillo de la distinción.<br /><br />
-												Ya sea que busques un anillo, collar, pulsera o
-												pendientes, Luxshine tiene la pieza perfecta para ti,
-												con diseños únicos y acabados impecables que reflejan
-												la excelencia artesanal de la marca.
-											</h4>
-
-											<a class="btn" href="collections/accessories.html">Ver Colección</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-1576221125565" class="shopify-section section section_divider">
-					<div class="divider_item container" style="padding-top: 26px"></div>
-
-					<div class="divider_item tablet_show container" style="padding-top: 26px"></div>
-				</div>
-				<div id="shopify-section-1576154042300"
-					class="shopify-section section section_homepage section_products-carousel">
-					<div class="container_big">
-						<div class="container">
-							<h4 class="section_heading"><span>Los más vendidos</span></h4>
-						</div>
-
-						<div class="product_carousel_wrap">
-							<div class="products_carousel swiper-container" id="products_carousel_1576154042300"
-								data-products="">
-								<div class="swiper-wrapper product_listing__main">
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__tommy-hilfiger-blue-ion-plated-ladies-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/tommy-hilfiger-blue-ion-plated-ladies-watch.html">
-														<img class="lazyload" src="img/productos/aretes_2.jpeg"
-															alt="Tommy Hilfiger Blue Ion Plated Ladies Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<input type="hidden" name="id" value="31411630735498" />
-														<button class="btn btn-cart" type="submit">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Add to cart</span>
-														</button>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/tommy-hilfiger-blue-ion-plated-ladies-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Emporio Armani</p>
-
-												<p class="product_name">
-													<a href="products/Aretes-Oro-24k-Cubierto-de-Safiro-Solido.html">Aretes
-														Oro 24k Cubierto de Safiro Sólido</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$15.00</span>
-
-													<span class="money money_sale">$25.00</span>
-												</p>
-
-												<p class="product_desc">
-													Tick tock. You’ll never wonder what time it is again
-													when you browse through all watches, including
-													designer brands like Gucci, Daniel Wellington. From
-													stainless steel and ceramic watch straps to l...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__olivia-burton-glasshouse-rose-gold-plated-mesh-ladies-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/olivia-burton-glasshouse-rose-gold-plated-mesh-ladies-watch.html">
-														<img class="lazyload" src="img/productos/anillo_1.jpeg"
-															alt="Olivia Burton Glasshouse Rose Gold Plated Mesh Ladies Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<input type="hidden" name="id" value="31411615826058" />
-														<button class="btn btn-cart" type="submit">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Add to cart</span>
-														</button>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/olivia-burton-glasshouse-rose-gold-plated-mesh-ladies-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Gucci</p>
-
-												<p class="product_name">
-													<a
-														href="products/olivia-burton-glasshouse-rose-gold-plated-mesh-ladies-watch.html">Olivia
-														Burton Glasshouse Rose Gold Plated Mesh
-														...</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$20.00</span>
-
-													<span class="money money_sale">$22.00</span>
-												</p>
-
-												<p class="product_desc">
-													Our vast range of sports watches includes popular
-													brands, such as Casio, G-Shock and Citizen, all
-													packed with the special features any budding
-													sportsman could need. If it’s versatility you’re
-													after...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__gucci-g-timeless-gold-plated-leather-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/gucci-g-timeless-gold-plated-leather-watch.html">
-														<img class="lazyload" src="img/productos/aretes_1.jpeg"
-															alt="Gucci G Timeless Gold Plated Leather Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<a class="btn btn_options"
-															href="products/gucci-g-timeless-gold-plated-leather-watch.html">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Choose variant</span>
-														</a>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/gucci-g-timeless-gold-plated-leather-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Vivienne Westwood</p>
-
-												<p class="product_name">
-													<a href="products/gucci-g-timeless-gold-plated-leather-watch.html">Gucci
-														G Timeless Gold Plated Leather Watch</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$10.00</span>
-													<span class="money_like main_price">–</span>
-													<span class="money main_price">$19.00</span>
-												</p>
-
-												<p class="product_desc">
-													Solar watches are another option for those who want
-													to energize their watch collection. Powered by a
-													solar panel, these watches are environmentally
-													friendly and ideal for the seasoned outdoorsman. ...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__tissot-lepine-rose-gold-tone-mechanical-pocket-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/tissot-lepine-rose-gold-tone-mechanical-pocket-watch.html">
-														<img class="lazyload" src="img/productos/cadena_1.jpeg"
-															alt="Tissot Lepine Rose Gold Tone Mechanical Pocket Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<a class="btn btn_options"
-															href="products/tissot-lepine-rose-gold-tone-mechanical-pocket-watch.html">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Choose variant</span>
-														</a>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/tissot-lepine-rose-gold-tone-mechanical-pocket-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Vivienne Westwood</p>
-
-												<p class="product_name">
-													<a
-														href="products/tissot-lepine-rose-gold-tone-mechanical-pocket-watch.html">Tissot
-														Lepine Rose Gold Tone Mechanical Pocket
-														...</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$95.00</span>
-													<span class="money_like main_price">–</span>
-													<span class="money main_price">$100.00</span>
-												</p>
-
-												<p class="product_desc">
-													Solar watches are another option for those who want
-													to energize their watch collection. Powered by a
-													solar panel, these watches are environmentally
-													friendly and ideal for the seasoned outdoorsman. ...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__hugo-boss-grand-prix-black-ion-plated-chronograph-mens-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/hugo-boss-grand-prix-black-ion-plated-chronograph-mens-watch.html">
-														<img class="lazyload" src="img/productos/aretes_2.jpeg"
-															alt="Hugo Boss Grand Prix Black Ion Plated Chronograph Mens Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<input type="hidden" name="id" value="31411282804874" />
-														<button class="btn btn-cart" type="submit">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Add to cart</span>
-														</button>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/hugo-boss-grand-prix-black-ion-plated-chronograph-mens-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Hugo Boss</p>
-
-												<p class="product_name">
-													<a
-														href="products/hugo-boss-grand-prix-black-ion-plated-chronograph-mens-watch.html">Hugo
-														Boss Grand Prix Black Ion Plated
-														Chronogra...</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$25.00</span>
-
-													<span class="money money_sale">$36.00</span>
-												</p>
-
-												<p class="product_desc">
-													Solar watches are another option for those who want
-													to energize their watch collection. Powered by a
-													solar panel, these watches are environmentally
-													friendly and ideal for the seasoned outdoorsman. ...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item" id="product__gucci-plexiglass-fashion-ladies-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/gucci-plexiglass-fashion-ladies-watch.html">
-														<img class="lazyload"
-															src="cdn/shop/products/gucci_plexiglass_fashion_ladies_watch_1_100x100_crop_top2d78.png?v=1576655878"
-															data-src="//theme808-apparelix-watches.myshopify.com/cdn/shop/products/gucci_plexiglass_fashion_ladies_watch_1_346x519_crop_top.png?v=1576655878"
-															alt="Gucci Plexiglass Fashion Ladies Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<a class="btn btn_options"
-															href="products/gucci-plexiglass-fashion-ladies-watch.html">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Choose variant</span>
-														</a>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/gucci-plexiglass-fashion-ladies-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Gucci</p>
-
-												<p class="product_name">
-													<a href="products/gucci-plexiglass-fashion-ladies-watch.html">Gucci
-														Plexiglass Fashion Ladies Watch</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$78.00</span>
-													<span class="money_like main_price">–</span>
-													<span class="money main_price">$80.00</span>
-												</p>
-
-												<p class="product_desc">
-													Our vast range of sports watches includes popular
-													brands, such as Casio, G-Shock and Citizen, all
-													packed with the special features any budding
-													sportsman could need. If it’s versatility you’re
-													after...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item" id="product__emporio-armani-mens-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/emporio-armani-mens-watch.html">
-														<img class="lazyload"
-															src="cdn/shop/products/emporio_armani_mens_watch_1_6456f136-854a-4d34-81c5-e0e9b104b896_100x100_crop_top6c1a.png?v=1576655796"
-															data-src="//theme808-apparelix-watches.myshopify.com/cdn/shop/products/emporio_armani_mens_watch_1_6456f136-854a-4d34-81c5-e0e9b104b896_346x519_crop_top.png?v=1576655796"
-															alt="Emporio Armani Mens Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<a class="btn btn_options"
-															href="products/emporio-armani-mens-watch.html">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Choose variant</span>
-														</a>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/emporio-armani-mens-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Hugo Boss</p>
-
-												<p class="product_name">
-													<a href="products/emporio-armani-mens-watch.html">Emporio Armani
-														Mens Watch</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$110.00</span>
-													<span class="money_like main_price">–</span>
-													<span class="money main_price">$119.00</span>
-												</p>
-
-												<p class="product_desc">
-													Solar watches are another option for those who want
-													to energize their watch collection. Powered by a
-													solar panel, these watches are environmentally
-													friendly and ideal for the seasoned outdoorsman. ...
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="product_item"
-											id="product__breitling-navitimer-world-46-automatic-chronograph-mens-watch">
-											<div class="product_img_wrap">
-												<div class="product_img">
-													<a class="img_change"
-														href="products/breitling-navitimer-world-46-automatic-chronograph-mens-watch.html">
-														<img class="lazyload"
-															src="cdn/shop/products/breitling_navitimer_world_46_automatic_chronograph_mens_watch_1_aa9f5037-1c9e-4291-b1c5-cb439299b65b_100x100_crop_top7511.png?v=1576655766"
-															data-src="//theme808-apparelix-watches.myshopify.com/cdn/shop/products/breitling_navitimer_world_46_automatic_chronograph_mens_watch_1_aa9f5037-1c9e-4291-b1c5-cb439299b65b_346x519_crop_top.png?v=1576655766"
-															alt="Breitling Navitimer World 46 Automatic Chronograph Mens Watch" />
-
-														<div class="bade_wrap"></div>
-													</a>
-												</div>
-
-												<div class="product_links">
-													<form method="post"
-														action="https://theme808-apparelix-watches.myshopify.com/cart/add"
-														class="add_to_cart_form">
-														<a class="btn btn_options"
-															href="products/breitling-navitimer-world-46-automatic-chronograph-mens-watch.html">
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z" />
-																<path
-																	d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z" />
-															</svg>
-															<span>Choose variant</span>
-														</a>
-													</form>
-
-													<div class="product_links__subbutton">
-														<a class="quick_view_btn"
-															href="products/breitling-navitimer-world-46-automatic-chronograph-mens-watch.html"
-															title="Quick view"><span>Quick view</span>
-															<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z" />
-																<path fill-rule="evenodd" clip-rule="evenodd"
-																	d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z" />
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-
-											<div class="product_info">
-												<div class="product_color"></div>
-
-												<p class="product_vendor">Emporio Armani</p>
-
-												<p class="product_name">
-													<a
-														href="products/breitling-navitimer-world-46-automatic-chronograph-mens-watch.html">Breitling
-														Navitimer World 46 Automatic
-														Chronogr...</a>
-												</p>
-
-												<p class="product_price">
-													<span class="money main_price">$65.00</span>
-													<span class="money_like main_price">–</span>
-													<span class="money main_price">$70.00</span>
-												</p>
-
-												<p class="product_desc">
-													Tick tock. You’ll never wonder what time it is again
-													when you browse through all watches, including
-													designer brands like Gucci, Daniel Wellington. From
-													stainless steel and ceramic watch straps to l...
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div id="pagination_1576154042300" class="swiper_pagination"></div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-1576221147204" class="shopify-section section section_divider">
-					<div class="divider_item container" style="padding-top: 26px"></div>
-
-					<div class="divider_item tablet_show container" style="padding-top: 26px"></div>
-				</div>
-				<div id="shopify-section-1576154154406"
-					class="shopify-section section section_homepage section_banners">
-					<div class="container_big">
-						<div class="row">
-							<div class="col-sm-6 banner_50">
-								<div class="banner_item">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_50_1_150x118_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										alt=""
-										data-src="cdn/shop/files/ban_50_1_895x700_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_top caption_horizontal_center caption_inverted">
-										<div class="caption_text inverted text_align_center">
-											<h2>Timex Command</h2>
-
-											<h4>Up to 25% off</h4>
-
-											<a class="btn" href="collections/unisex.html"><span>Shop Now</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-6 banner_50">
-								<div class="banner_item hover_image">
-									<img style="width: 100%" class="banner_image lazyload blur-up"
-										src="cdn/shop/files/ban_50_2_150x118_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										alt=""
-										data-src="cdn/shop/files/ban_50_2_895x700_crop_center.progressive.png5b2e.jpg?v=1613674593"
-										data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1810]" />
-
-									<div
-										class="banner_caption style_telling caption_vertical_bottom caption_horizontal_center caption_normal">
-										<div class="caption_text text_align_center">
-											<h2><span>Special Offers</span></h2>
-
-											<h4>
-												Buy designer leather, stainless steel & more types of
-												Mens Watches Online
-											</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-1576157982370" class="shopify-section section section_divider">
-					<div class="divider_item" style="padding-top: 30px"></div>
-
-					<div class="divider_item tablet_show" style="padding-top: 30px"></div>
-				</div>
-				<div id="shopify-section-1576154270299"
-					class="shopify-section section section_homepage index_section_testimonials">
-					<div class="container_big">
-						<div class="container">
-							<div class="testimonials_caption">
-								<p class="testimonials_caption__text">Reviews from:</p>
-
-								<img src="cdn/shop/files/testim_185x45_crop_center1430.png?v=1613674594" alt="" />
-							</div>
-
-							<div class="testimonials_slider swiper-container" id="testimonials_1576154270299">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="testimonial_slide__item style_type_2">
-											<div class="testimonials_item__stars">
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-											</div>
-
-											<blockquote class="testimonials_item">
-												<p class="testimonials_item__text">
-													Desde el momento en que abrí el paquete de Luxshine
-													y vi las deslumbrantes joyas en su interior, supe
-													que había hecho una elección acertada. Cada pieza
-													irradiaba una belleza excepcional y una calidad
-													impecable que superaba con creces mis expectativas.
-													Desde el anillo de compromiso que brillaba con el
-													fuego de sus diamantes hasta los delicados
-													pendientes que agregaban un toque de sofisticación a
-													mi atuendo diario, cada detalle reflejaba el cuidado
-													y la artesanía de primera clase que Luxshine ofrece.
-													Estoy encantada con mis nuevas adquisiciones y no
-													puedo esperar para lucirlas en cada ocasión
-													especial. Luxshine ha ganado no solo mi admiración,
-													sino también mi confianza como destino de joyería
-													excepcional. ¡Gracias por hacerme sentir tan
-													especial!
-												</p>
-
-												<cite class="testimonials_item__author">Carla Acosta</cite>
-											</blockquote>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="testimonial_slide__item style_type_2">
-											<div class="testimonials_item__stars">
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-											</div>
-
-											<blockquote class="testimonials_item">
-												<p class="testimonials_item__text">
-													Quedé gratamente sorprendido al recibir mis joyas de
-													Luxshine. Desde el momento en que abrí el paquete,
-													supe que había elegido bien. La calidad y el detalle
-													en cada pieza eran evidentes de inmediato. El anillo
-													de plata con incrustaciones de ónix era elegante y
-													robusto, mientras que el brazalete de cuero con
-													detalles en oro era una declaración de estilo en sí
-													mismo. Luxshine ha superado mis expectativas en
-													todos los aspectos. Sin duda alguna, recomendaré
-													esta marca a mis amigos y familiares.
-												</p>
-
-												<cite class="testimonials_item__author">Erick Téquiz</cite>
-											</blockquote>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="testimonial_slide__item style_type_2">
-											<div class="testimonials_item__stars">
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z"
-															fill="#505050" />
-													</svg>
-												</span>
-											</div>
-
-											<blockquote class="testimonials_item">
-												<p class="testimonials_item__text">
-													Recientemente adquirí algunas joyas de Luxshine y en
-													general estoy muy satisfecho con mi experiencia. La
-													calidad y el diseño de las piezas son excepcionales,
-													y realmente me impresionó la atención al detalle en
-													cada artículo. Sin embargo, hubo un pequeño problema
-													con el tiempo de entrega, ya que mi pedido se
-													retrasó un par de días más de lo esperado. Aunque
-													este inconveniente fue decepcionante, el servicio al
-													cliente fue muy atento y me mantuvo informado
-													durante todo el proceso. A pesar de este
-													contratiempo, aún considero que Luxshine ofrece
-													productos de alta calidad y estilo, y
-													definitivamente seguiré siendo cliente. Por esta
-													razón, le doy una calificación de 4 estrellas.
-												</p>
-
-												<cite class="testimonials_item__author">Nixón Mendoza</cite>
-											</blockquote>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="testimonial_slide__item style_type_2">
-											<div class="testimonials_item__stars">
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-
-												<span class="star_item">
-													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" />
-													</svg>
-												</span>
-											</div>
-
-											<blockquote class="testimonials_item">
-												<p class="testimonials_item__text">
-													Quería encontrar algo especial para el cumpleaños de
-													mi novio, algo que realmente reflejara su estilo y
-													personalidad. Después de explorar varias opciones,
-													decidí comprarle un reloj de Luxshine, ¡y no podría
-													estar más feliz con mi elección! Desde el momento en
-													que lo recibí, supe que había encontrado algo
-													especial. El reloj era elegante y moderno, con un
-													diseño que realmente destacaba. Mi novio quedó
-													encantado con el regalo y ha recibido numerosos
-													elogios cada vez que lo usa. La calidad del producto
-													y el servicio al cliente de Luxshine fueron
-													excepcionales; la entrega fue rápida y el proceso de
-													compra fue sencillo. ¡Definitivamente recomendaría
-													Luxshine a cualquiera que esté buscando regalos
-													únicos y de alta calidad! Sin duda, merece 5
-													estrellas. ¡Gracias, Luxshine, por hacer que este
-													cumpleaños fuera inolvidable!
-												</p>
-
-												<cite class="testimonials_item__author">Anahí Pillajo</cite>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-
-								<div id="pagination_1576154270299" class="swiper_pagination"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="shopify-section-16261925423ae294ef"
-					class="shopify-section section section_homepage section_banners">
-					<div class="container_big">
-						<div class="row"></div>
-					</div>
-				</div>
-				<!-- END content_for_index -->
-			</div>
-
-			<div id="shopify-section-footer-2" class="shopify-section">
-				<footer class="footer_type_2" style="background-color: #12100e">
-					<div class="footer_row__1">
-						<div class="footer_top_pannel">
-							<div class="container">
-								<div class="footer_newsletter_caption">
-									<h4>
-										Recibe nuestras últimas noticias y promociones especiales.
-									</h4>
-
-									<p class="form_text">
-										Puedes darte de baja en cualquier momento. Para ello,
-										encontrará nuestros datos de contacto en el aviso legal.
-									</p>
-								</div>
-
-								<form method="post"
-									action="https://theme808-apparelix-watches.myshopify.com/contact#contact_form"
-									id="newsletter_form" accept-charset="UTF-8" class="footer_newsletter_form">
-									<input type="hidden" name="form_type" value="customer" /><input type="hidden"
-										name="utf8" value="✓" />
-									<p class="alert alert-success hidden">
-										You have successfully subscribed!
-									</p>
-									<input type="hidden" name="contact[tags]" value="Newsletter subscriber" />
-									<div class="form_wrapper">
-										<input type="email" name="contact[email]"
-											class="input-group__field newsletter__input"
-											placeholder="Enter your email" />
-										<button class="btn" type="submit">Get</button>
-									</div>
-								</form>
-							</div>
-						</div>
-
-						<div class="footer_main">
-							<div class="col-sm-3 footer_block footer_block__2_1">
-								<div class="footer_item footer_item__links">
-									<h6 class="linklist_menu_title">Inicio</h6>
-
-									<ul class="list_links">
-										<li>
-											<a href="account/login4236.html">Secciones</a>
-										</li>
-
-										<li>
-											<a href="account/login4236.html">Catálogo</a>
-										</li>
-
-										<li>
-											<a href="cart.html">Colección</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-sm-3 footer_block">
-								<div class="footer_item footer_item__contacts">
-									<h6 class="linklist_menu_title">Servicio al Cliente</h6>
-									<ul class="list_links">
-										<div class="contact_address">
-											<p>De Lunes a Domingo <br />24 horas</p>
-										</div>
-
-										<a class="contact_phone tel_ltr" href="tel:+(593) 99876319">
-											+593 99876319</a>
-
-										<a class="contact_email"
-											href="mailto:luxshine37@gmail.com">luxshine37@gmail.com</a>
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-sm-3 footer_block footer_block__2_1">
-								<div class="footer_item footer_item__contacts">
-									<h6 class="linklist_menu_title">GARANTÍA</h6>
-									<ul class="list_links">
-										<div class="contact_address">
-											<p>Hasta 3 días despúes de su compra</p>
-											<p>Reembolso en daños de fábrica</p>
-											<p>Pago seguro</p>
-										</div>
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-sm-3 footer_block">
-								<div class="footer_item footer_item__links">
-									<h6 class="linklist_menu_title">Sobre Nosotros</h6>
-
-									<ul class="list_links">
-										<li>
-											<a href="pages/delivery-info.html">Detalles de Entrega</a>
-										</li>
-
-										<li>
-											<a href="policies/privacy-policy.html">Politicas de Privacidad</a>
-										</li>
-
-										<li>
-											<a href="policies/refund-policy.html">Politica de Reembolso</a>
-										</li>
-
-										<li>
-											<a href="policies/terms-of-service.html">Términos y Servicios</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="footer_row__2">
-						<div class="footer_bottom_pannel container_big">
-							<div class="footer_wrap_2 footer_copyright">
-								© 2024.
-								<a target="_blank" rel="nofollow" href="https://erick-tx.github.io/">Diseñado por Erick
-									Tx</a>
-							</div>
-
-							<ul class="footer_wrap_2 social_menu">
-								<li>
-									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-								</li>
-
-								<li>
-									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								</li>
-
-								<li>
-									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								</li>
-
-								<li>
-									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-
-		<a id="back_top" href="#">
-			<i class="fa fa-angle-up" aria-hidden="true"></i>
-		</a>
-	</div>
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/erick_2.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Erick Téquiz</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!---<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+          <a href="https://github.com/Erick-Tx" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/erick-tequiz/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/erick.tequiz.personal" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/ericktequiz/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class='bx bxs-book'></i> <span>Interests</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1 >Erick Téquiz</h1>
+      <p style="color: black;">I'm <span class="typed" data-typed-items="Designer, Developer, Photographer" style="color: black; font-weight: bolder;"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I'm Erick and I love technology. Currently, I am Information Technologies Enginner student. I like to learn every day new technologies and keep updates my knowledge about Design Graphic and Web Development.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/erick2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Photographer &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              I have developed both skills during the years of work and development of academic projects. Here is some current information about me.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>30 March 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>Yachay Tech</span></li> 
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="https://wa.me/593999856071">Whatsapp</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>La Libertad, Ecuador</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Career:</strong> <span>Information Technologies Enginner</span></li>
+                  <!---<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>-->
+                </ul>
+              </div>
+            </div>
+            <p>
+              I have always been known for being a creative person and wanting to learn new things.
+              From a very young age I learned graphic design and I loved seeing the many things I could do on a blank sheet of paper. As time went by, I discovered the world of programming and that was when my whole life changed. In combination of these two abilities extraordinary things can be created.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Throughout my life I have been acquiring new skills in graphic design and programming. In addition, I make sure that the skills acquired are not lost, it is so practical whether at work or in different projects.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="fas fa-code"></i><i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="fab fa-css3"></i><i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="fab fa-js-square"></i><i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="fas fa-database"></i><i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="fab fa-php"></i><i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class='bx bxl-python' ></i><i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="fas fa-palette"></i><i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Illustrator <i class="fas fa-pen-nib"></i><i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I've been a dedicated student all my life, excelling in the International Baccalaureate Diploma program and graduating as one of the top students in my school. Currently, I'm pursuing my sixth semester in Information Technology Engineering at Universidad de Investigación de Tecnología Experimental Yachay. Alongside my studies, I work as a teaching assistant for Innovation and Entrepreneurship, where I've gained insights not only into technology but also in creating and managing new ventures, which greatly aids my involvement in the Hult Prize. <br>Previously, I've engaged in community projects, teaching high school students graphic design, web development, and computing. Presently, I'm undertaking my pre-professional internship in AI. Moreover, I co-founded the Computer Science Club in my community and currently hold the position of Vice President. Additionally, I'm proud to be part of the Microsoft Learn Student Ambassador program.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Erick Téquiz</h4>
+              <p><em>Innovator, programmer and graphic designer. With years of experience in the design, photography and development of digital or printed advertising material.</em></p>
+              <ul>
+                <li>La Libertad, Santa Elena, Ec</li>
+                <li>(+593) 999856071</li>
+                <li>erick.tequiz@yachaytech.edu.ec</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor Degree &amp; Information Technology Engineering.</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Universidad de Investigación de Tecnología Experimental Yachay, Urcuquí, Imbabura</em></p>
+              <p>Being part of this university is already a great achievement. I have learned a lot about the race, thanks to the vision of it and the great community behind it.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Secondary Studies &amp; International Baccalaureate</h4>
+              <h5>2012 - 2018</h5>
+              <p><em>Unidad Educativa "La Libertad", La Libertad, Santa Elena</em></p>
+              <p>Being part of this program helped me to have a broad vision of the world, it also taught me to be a good leader and to be able to do anything from scratch.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Graphic Designer and Photographer</h4> 
+              <h5>2018 - Present</h5>
+              <p><em>Foto Estudio y Filmaciones Tequiz, Ibarra, Imbabura</em></p>
+              <ul>
+                <li>I did numerous marketing jobs (logos, brochures, infographics, presentations and advertisements).</li>
+                <li>I have made products using sublimation technique.</li>  
+                <li>I participated in numerous social events, where many times I worked under pressure.</li>
+                <li>I handle image and video editing software very well.</li>    
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Microsoft Learn Student Ambassadors - Volunteering</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Microsoft </em></p>
+              <ul>
+                <li>Lead the group in order to achieve its mission and vision.</li>    
+                <li>Campus leader who wants to help other students, create strong technical communities, and develop technical and professional skills for the future.</li>    
+                <li>I have organized and participated in projects worldwide. Imagine Cup.</li>    
+                
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Vice President - Volunteering</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Club de Ciencias Computacionales Yachay Tech, Urcuquí, Imbabura </em></p>
+              <ul>
+                <li>Lead the club in order to achieve its mission and vision.</li>    
+                <li>I delegated tasks to the leaders of each department within the club and provided advice on all aspects of projects and courses.</li>    
+                <li>I have designed courses, events and projects from scratch, all related to the field of technology and graphic design.</li>    
+                <li>I trained several members in the field of Web Development, Python programming and Graphic Design.</li>    
+                <li>Supervise the evaluation of all materials to guarantee the quality and precision of the projects or courses.</li>      
+                  
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graphic Designer and Photographer</h4> 
+              <h5>2013 - 2018</h5>
+              <p><em>Foto Estudio y Filmaciones Téquiz, La Libertad, Santa Elena</em></p>
+              <ul>
+                <li>I did numerous marketing jobs (logos, brochures, infographics, presentations and advertisements).</li>
+                <li>I participated in numerous social events, where many times I worked under pressure.</li>
+                <li>I had the opportunity to work on the redesign of a newspaper from scratch by myself.</li>    
+                <li>I handle image and video editing software very well.</li>    
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>These are some of my work done throughout my life:</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <!--<li data-filter=".filter-app">App</li>-->
+              <li data-filter=".filter-card">Illustrations</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ECG-Signal_project.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/ECG-Signal_project.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ECG-Signal - Biomedical Web"><i class="bx bx-plus"></i></a>
+                <a href="https://ecg-simulator-learn-game.vercel.app" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foto Téquiz - Sucursal Ibarra"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.jpg" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/yachayTrade.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/yachayTrade.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ecommerce"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Erick-Tx/YachayTrade" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vectorizacion.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/vectorizacion.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Vectorization"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/vectorizacion.png" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Design and sublimation"><i class="bx bx-plus"></i></a>
+                <a href="assets/video/video.mp4" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/code_player.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/code_player.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Code Player"><i class="bx bx-plus"></i></a>
+                <a href="https://tx-code-player.vercel.app/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/restauracion.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/restauracion2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Restoration"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/restauracion2.png" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/shooter_game.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/shooter_game.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Game made with Computer Vision"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Ariannx/Shooter-Game" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Interests Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Interests</h2>
+          <p>Daily I find myself exploring new tools and technology in order to improve and increase my skills. <br>These are some of my current interests:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-terminal-fill"></i></div>
+            <h4 class="title"><a href="">Linux</a></h4>
+            <p class="description">Handling of the terminal and exploration of the different existing Linux distributions.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-phone-fill"></i></div>
+            <h4 class="title"><a href="">Mobile App Development</a></h4>
+            <p class="description">Management of different programming languages, for the development of mobile applications. For example: Java and Kotlin.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-cpu-fill"></i></div>
+            <h4 class="title"><a href="">Machine Learning</a></h4>
+            <p class="description">Management and study of different mathematical concepts for the understanding and development of convolutional neural network.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-globe2"></i></div>
+            <h4 class="title"><a href="">IA (Artificial Intelligence)</a></h4>
+            <p class="description">Practice and development of algorithms in order to create machines that have capabilities similar to those of the human being.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-pie-chart-fill"></i></div>
+            <h4 class="title"><a href="">Data Science</a></h4>
+            <p class="description">Study and mastery of statistical tools such as R or Python in order to explore, manipulate and analyze data in depth.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-shield-fill-check"></i></div>
+            <h4 class="title"><a href="">Cybersecurity</a></h4>
+            <p class="description">Study and mastery of different attack and system audit techniques. With tools present in different linux distributions such as Kali Linux, Parrot, Wifislax.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you want to contact me, then you can find the different means that will facilitate this task:</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Yachay, Imbabura, Ecuador</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>erick.tequiz@yachaytech.edu.ec</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call or message:</h4>
+                <a href="https://wa.me/593999856071"><p>Whatsapp</p></a>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.718979430011!2d-78.17819702552521!3d0.4043207638863324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a3a4b5d36ad37%3A0x29804a25cc7029fb!2sUniversidad%20Yachay%20Tech!5e0!3m2!1ses!2sec!4v1708704788657!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+
+           
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Erick <strong><span>Tx</span></strong>
+      </div>
+      
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
-
-<!-- Mirrored from theme808-apparelix-watches.myshopify.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Mar 2024 04:58:05 GMT -->
 
 </html>
